@@ -1,0 +1,78 @@
+/* General Styles */
+:root {
+  --size: 72vmin;
+  --cell: calc(var(--size) / 3);
+  --color-active: #e3f2fd; 
+  --color-border: #1976d2; 
+  --color-text: #111;
+  --color-win: linear-gradient(90deg, #ffd54a, #ffb74d); 
+}
+
+* {
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 1rem;
+  background: #f0f2f5;
+}
+
+main {
+  width: min(420px, 95%);
+  text-align: center;
+}
+
+h1 {
+  margin: 0 0 12px;
+}
+
+/* Board Styles */
+#board {
+  width: var(--size);
+  height: var(--size);
+  max-width: 360px;
+  max-height: 360px;
+  margin: 12px auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 6px;
+}
+
+.cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  border-radius: 8px;
+  font-size: 3rem;
+  cursor: pointer;
+  user-select: none;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  transition: all 0.2s ease; 
+}
+
+/* Stripe overlay for winning line */
+.stripe {
+  position: absolute;
+  background: var(--color-win);
+  height: 8px;                
+  border-radius: 6px;
+  transform-origin: center;
+  z-index: 50;
+  pointer-events: none;
+  transition: transform 300ms ease, opacity 300ms ease;
+  opacity: 0;
+  transform: scaleX(0) rotate(0deg);
+}
+
+
+#board {
+  position: relative;
+}

@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Tic Tac Toe</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main>
+    <h1>Tic Tac Toe</h1>
+    <div id="scoreboard">
+      <div>X wins: <span id="x-wins">0</span></div>
+      <div>O wins: <span id="o-wins">0</span></div>
+      <div>Draws: <span id="draws">0</span></div>
+      <button id="reset-scores">Reset Scores</button>
+    </div>
+
+    <div id="board" role="grid" aria-label="Tic Tac Toe board">
+      <!-- 9 cells inserted by JS -->
+    </div>
+
+    <div class="controls">
+      <div id="status">Turn: <span id="turn">X</span></div>
+      <button id="reset">Reset</button>
+    </div>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
