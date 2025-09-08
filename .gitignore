@@ -1,5 +1,2 @@
 # Ignore environment variables
 .env
-.continue
-ai-helper-run.js
-ai-helper.js
