@@ -38,7 +38,6 @@ AI assistance was used to refine styling, improve code readability, and add visu
 1. Clone the repository:  
    ```bash
    git clone https://github.com/DitaAD/TikTakToe-Projek.git
-   cd tictactoe-ai
 2. Open the project folder in VS Code (or any editor).
 3. Run by simply opening index.html in your browser.
 4. (Optional) Deploy using GitHub Pages / Netlify / Vercel for online access.
